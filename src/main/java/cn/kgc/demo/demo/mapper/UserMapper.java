@@ -85,7 +85,7 @@ public interface UserMapper {
         "id, userCode, userName, userPassword, gender, birthday, phone, address, userRole, ",
         "createdBy, creationDate, modifyBy, modifyDate",
         "from smbms_user",
-        "where userName = #{userName,jdbcType=VARCHAR}"
+        "where usercode = #{usercode,jdbcType=VARCHAR}"
 })
     @ResultMap(value = "UserResult")
     User selectByUserName(String  userName);

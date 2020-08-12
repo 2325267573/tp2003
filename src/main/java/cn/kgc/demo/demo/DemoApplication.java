@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 //实现类的动态绑定
 @MapperScan(basePackages = "cn.kgc.demo.demo.mapper")
 //扫描service
-@ComponentScan(basePackages = {"cn.kgc.demo.demo.service.impl","cn.kgc.demo.demo.constroller",})
+@ComponentScan(basePackages = {"cn.kgc.demo.demo.service.impl","cn.kgc.demo.demo.constroller","cn.kgc.demo.demo.config"})
 @EnableTransactionManagement
 public class DemoApplication {
 
